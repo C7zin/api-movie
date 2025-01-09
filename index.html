@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="app">
+      <header>
+        <h1><i class="fa-solid fa-video"></i> MOVIES APP</h1>
+        <input
+          type="text"
+          id="search"
+          placeholder="Digite nome do filme . . ."
+        />
+        <button id="search-button">Search</button>
+
+        <!-- Slider dentro do header -->
+        <div class="content">
+          <div class="slides">
+            <input
+              class="input2"
+              type="radio"
+              name="slide"
+              id="slide1"
+              checked
+            />
+            <input class="input2" type="radio" name="slide" id="slide2" />
+            <input class="input2" type="radio" name="slide" id="slide3" />
+            <input class="input2" type="radio" name="slide" id="slide4" />
+
+            <div class="slide s1">
+              <img src="./Assets/20190417112032.jpg" alt="" />
+              <button class="details-btn" data-id="tt4154796">DETALHES</button>
+            </div>
+
+            <div class="slide">
+              <img src="./Assets/avatar.webp" alt="" />
+              <button class="details-btn" data-id="tt0499549">DETALHES</button>
+            </div>
+
+            <div class="slide">
+              <img src="./Assets/MOANA.jpg" alt="" />
+              <button class="details-btn" data-id="tt13622970">DETALHES</button>
+            </div>
+
+            <div class="slide">
+              <img src="./Assets/rio-3-lancamento.jpg" alt="" />
+              <button class="details-btn" data-id="tt2357291">DETALHES</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="navigation">
+          <label class="bar" for="slide1"></label>
+          <label class="bar" for="slide2"></label>
+          <label class="bar" for="slide3"></label>
+          <label class="bar" for="slide4"></label>
+        </div>
+      </header>
+
+      <div class="background-color">
+        <section id="results"></section>
+        <section id="details" class="hidden"></section>
+        <section id="filmes-cartaz"></section>
+      </div>
+    </div>
+
+    <section class="produtos">
+      <h1>Produtos & Comidas</h1>
+      <div class="container-produtos">
+        <div class="card-produto">
+          <img src="/Assets/COMBO-1.jpg" alt="combo1" id="combo1" />
+          <h2>Combo Super Familia</h2>
+          <p>1 batata média 1 , 1 picoca grande , 1 refrigerante 550ml.</p>
+          <p><strong>$59,99</strong></p>
+
+          <input
+            type="number"
+            type="number"
+            id="quantidade"
+            name="quantidade"
+            value="0"
+            min="1"
+            max="10"
+          />
+          Quantidade
+        </div>
+        <div class="card-produto">
+          <img src="/Assets/combo2.jpg" alt="combo1" id="combo1" />
+          <h2>Combo Super Familia</h2>
+          <p>1 batata média 1 , 1 picoca grande , 1 refrigerante 550ml.</p>
+          <p><strong>$79,99</strong></p>
+
+          <input
+            type="number"
+            type="number"
+            id="quantidade"
+            name="quantidade"
+            value="0"
+            min="1"
+            max="10"
+          />
+          Quantidade
+        </div>
+        <div class="card-produto">
+          <img src="/Assets/combo3.webp" alt="combo1" id="combo1" />
+          <h2>Combo Super Familia</h2>
+          <p>1 batata média 1 , 1 picoca grande , 1 refrigerante 550ml.</p>
+          <p><strong>$64,99</strong></p>
+
+          <input
+            type="number"
+            type="number"
+            id="quantidade"
+            name="quantidade"
+            value="0"
+            min="1"
+            max="10"
+          />
+          Quantidade
+        </div>
+        <div class="card-produto">
+          <img src="/Assets/combo4.webp" alt="combo1" id="combo1" />
+          <h2>Combo Super Familia</h2>
+          <p>1 batata média 1 , 1 picoca grande , 1 refrigerante 550ml.</p>
+          <p><strong>$32,99</strong></p>
+
+          <input
+            type="number"
+            type="number"
+            id="quantidade"
+            name="quantidade"
+            value="0"
+            min="1"
+            max="10"
+          />
+          Quantidade
+        </div>
+        <div class="card-produto">
+          <img src="/Assets/COMBO-1.jpg" alt="combo1" id="combo1" />
+          <h2>Combo Super Familia</h2>
+          <p>1 batata média 1 , 1 picoca grande , 1 refrigerante 550ml.</p>
+          <p><strong>$25,99</strong></p>
+
+          <input
+            type="number"
+            type="number"
+            id="quantidade"
+            name="quantidade"
+            value="0"
+            min="1"
+            max="10"
+          />
+          Quantidade
+        </div>
+        <div class="card-produto">
+          <img src="/Assets/combo3.webp" alt="combo1" id="combo1" />
+          <h2>Combo Super Familia</h2>
+          <p>1 batata média 1 , 1 picoca grande , 1 refrigerante 550ml.</p>
+          <p><strong>$37,99</strong></p>
+
+          <input
+            type="number"
+            type="number"
+            id="quantidade"
+            name="quantidade"
+            value="0"
+            min="1"
+            max="10"
+          />
+          Quantidade
+        </div>
+        <div class="card-produto">
+          <img src="/Assets/combo2.jpg" alt="combo1" id="combo1" />
+          <h2>Combo Super Familia</h2>
+          <p>1 batata média 1 , 1 picoca grande , 1 refrigerante 550ml.</p>
+          <p><strong>$42,99</strong></p>
+
+          <input
+            type="number"
+            type="number"
+            id="quantidade"
+            name="quantidade"
+            value="0"
+            min="1"
+            max="10"
+          />
+          Quantidade
+        </div>
+      </div>
+    </section>
+
+    <section class="ingressos">
+      <h1>Tabelas de Preço ingressos</h1>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Tipo de ingresso</th>
+            <th>Segunda a Quarta</th>
+            <th>Quinta e Sexta</th>
+            <th>Sábado, Domingos e Feriados</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>Inteira</td>
+            <td>R$ 20,00</td>
+            <td>R$ 25,00</td>
+            <td>R$ 30,00</td>
+          </tr>
+
+          <tr>
+            <td>Meia entrada</td>
+            <td>R$ 10,00</td>
+            <td>R$ 12,50</td>
+            <td>R$ 15,00</td>
+          </tr>
+
+          <tr>
+            <td>Crianca (até 12 anos)</td>
+            <td>R$ 8,00</td>
+            <td>R$ 10,00</td>
+            <td>R$ 12,00</td>
+          </tr>
+
+          <tr>
+            <td>Idosos (Acima de 60 anos)</td>
+            <td>R$ 8,00</td>
+            <td>R$ 10,00</td>
+            <td>R$ 12,00</td>
+          </tr>
+
+          <tr>
+            <td>Premium</td>
+            <td>R$ 30,00</td>
+            <td>R$ 50,00</td>
+            <td>R$ 70,00</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="endereco">
+      <h1><strong>Nosso Endereço</strong></h1>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d158546.4275021733!2d-48.55188874246217!3d-1.422129637975102!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x92a48e8b9a50d04d%3A0xa10914cb395a1b94!2sMoviecom%20Cinemas!5e1!3m2!1spt-BR!2sbr!4v1736382375688!5m2!1spt-BR!2sbr"
+        width="600"
+        height="450"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </section>
+  </body>
+
+  <footer>
+    <h1><i class="fa-solid fa-video"></i> MOVIES APP</h1>
+    <p>
+      História |Onde estamos |Classificação Indicativa |Anuncie | &copy; Todos
+      os direitos reservados @devC7!
+    </p>
+
+    <a href="https://www.instagram.com/moviecomcinemas/"
+      ><i class="fa-brands fa-instagram"></i
+    ></a>
+    <a href="https://www.linkedin.com/company/cinemarkbrasil/"
+      ><i class="fa-brands fa-linkedin-in"></i
+    ></a>
+
+    <a href="https://github.com/C7zin"><i class="fa-brands fa-github"></i></a>
+  </footer>
+
+  <script src="script.js"></script>
+</html>

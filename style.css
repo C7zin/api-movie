@@ -1,0 +1,386 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+  background-color: black;
+  color: white;
+  padding: 30px;
+  margin: 0px;
+  text-align: center;
+  height: 100vh; /* Define a altura do header */
+  width: 100%;
+  align-items: flex-start; /* Alinha itens no topo */
+  display: flex;
+  justify-content: space-around;
+  gap: 20px; /* Espaçamento entre os elementos */
+  background-image: url(/Assets/fundo-de-tela-de-cinema-led-azul_42077-2591.avif);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  height: 100vh;
+  width: 100vw;
+}
+
+#search {
+  border: none;
+  outline: none;
+  height: 60px;
+  width: 300px;
+  padding: 0px 15px;
+
+  border-radius: 30px;
+  color: black;
+}
+
+#search-button {
+  height: 50px;
+  width: 200px;
+  border: none;
+  outline: none;
+
+  background-color: rgb(49, 49, 243);
+  color: whitesmoke;
+  border-radius: 30px;
+}
+#search-button:hover {
+  background-color: rgb(167, 175, 197);
+  cursor: pointer;
+}
+
+/* Slider ------ */
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  height: 100vh;
+  width: 100vw;
+}
+
+.content {
+  height: 520px;
+  width: 935px;
+  border-radius: 20px;
+  overflow: hidden;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+.content .slide img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.details-btn {
+  position: absolute;
+  bottom: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 10px 20px;
+  background-color: blue;
+  opacity: 0.7;
+  color: white;
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 2rem;
+  z-index: 2;
+}
+
+.details-btn:hover {
+  background-color: #c4bfbf;
+}
+
+.navigation {
+  position: absolute;
+  bottom: 160px;
+  left: 850px;
+  display: flex;
+}
+
+.bar {
+  width: 15px;
+  height: 15px;
+  border: 2px solid white;
+  margin: 20px;
+  border-radius: 15px;
+  cursor: pointer;
+  transform: 0.5s ease;
+}
+
+.bar:hover {
+  background-color: white;
+}
+
+.input2 {
+  display: none;
+}
+
+.slides {
+  display: flex;
+  width: 500%;
+  height: 100%;
+}
+
+.slide {
+  width: 20%;
+  transition: 0.6s;
+  position: relative;
+}
+
+#slide1:checked ~ .s1 {
+  margin-left: 0;
+}
+
+#slide2:checked ~ .s1 {
+  margin-left: -20%;
+}
+
+#slide3:checked ~ .s1 {
+  margin-left: -40%;
+}
+
+#slide4:checked ~ .s1 {
+  margin-left: -60%;
+}
+
+#slide5:checked ~ .s1 {
+  margin-left: -80%;
+}
+
+/* fim da estilizacao slider */
+
+.background-color {
+  background-color: black;
+}
+
+#results {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1em;
+  padding: 1em;
+  margin: 0px 20px;
+  color: white;
+  background-image: url(/Assets/gradiente-de-azul-escuro-m9rz7vxduyiet4h0.jpg);
+}
+
+#results:hover {
+  cursor: pointer;
+}
+
+#details {
+  position: fixed;
+  justify-content: center;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: black;
+  align-items: center;
+  color: white;
+  padding: 2em;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  overflow-y: auto;
+}
+
+.hidden {
+  display: none;
+  margin: 0px 20px;
+  padding: 20px;
+}
+
+#close-btn {
+  height: 50px;
+  width: 150px;
+  border: none;
+  outline: none;
+  background-color: rgb(12, 31, 90);
+  color: whitesmoke;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+.title-Filme {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.imagens-filmes {
+  width: 300px; /* Define a largura da imagem */
+  height: auto; /* Mantém a proporção da imagem */
+  border: 3px solid #333; /* Adiciona uma borda */
+  border-radius: 10px; /* Bordas arredondadas */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); /* Adiciona sombra */
+  margin: 20px auto; /* Espaçamento e centralização horizontal */
+  display: block; /* Garante centralização com margin auto */
+}
+.sinopse {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  margin: 15px 0px;
+}
+.autores {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+/* Produtos------------------------ */
+.produtos {
+  padding: 20px;
+  background-color: #f8f9fa; /* Fundo claro para destacar os cards */
+  background-image: url(/Assets/projeto-de-plano-de-fundo-do-conceito-de-cinematografo-com-pipoca-e-oculos-3d_260559-142.avif);
+}
+
+.produtos h1 {
+  text-align: center;
+  font-size: 2rem;
+  color: black;
+
+  margin-bottom: 30px;
+  font-family: "Arial", sans-serif;
+}
+
+.container-produtos {
+  display: flex;
+  flex-wrap: wrap; /* Permite múltiplas linhas de cards */
+  justify-content: center;
+  gap: 20px; /* Espaço entre os cards */
+}
+
+.card-produto {
+  width: 300px; /* Tamanho fixo para os cards */
+  background-color: #fff;
+  border: 1px solid #ddd; /* Bordas sutis */
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra leve */
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-produto:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.card-produto img {
+  width: 100%;
+  height: auto;
+  border-bottom: 1px solid #ddd; /* Divide a imagem do restante do card */
+}
+
+.card-produto h2 {
+  font-size: 1.25rem;
+  color: #222;
+  margin: 15px 10px 10px;
+}
+
+.card-produto p {
+  font-size: 0.95rem;
+  color: #555;
+  margin: 10px;
+}
+
+.card-produto p strong {
+  font-size: 1.2rem;
+  color: #28a745; /* Cor para o preço */
+}
+
+.card-produto input[type="number"] {
+  width: 60px;
+  padding: 5px;
+  margin: 10px 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  text-align: center;
+}
+
+/* Ingressos----------- */
+
+.ingressos {
+  background-image: url(/Assets/gradiente-de-azul-escuro-m9rz7vxduyiet4h0.jpg);
+  padding: 20px;
+}
+
+.ingressos h1 {
+  text-align: center;
+  padding: 20px;
+  color: #f8f9fa;
+}
+
+table {
+  width: 80%;
+  margin: auto;
+  padding-bottom: 20px;
+  border-collapse: collapse;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 15px;
+  text-align: center;
+}
+th {
+  background-color: #4caf50;
+  color: white;
+}
+
+tr:hover {
+  background-color: #ddd;
+  cursor: pointer;
+}
+
+/* endereço----------------------------------------- */
+.endereco {
+  background-image: url(/Assets/gradiente-de-azul-escuro-m9rz7vxduyiet4h0.jpg);
+  text-align: center;
+  margin: 0px auto;
+  padding: 30px 0px;
+}
+
+.endereco iframe {
+  display: inline-block;
+}
+
+.endereco h1 {
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  color: #f8f9fa;
+}
+
+/* footer / rodape */
+
+footer {
+  background-image: url(/Assets/gradiente-de-azul-escuro-m9rz7vxduyiet4h0.jpg);
+  color: white;
+  position: relative;
+  padding: 30px;
+  text-align: center;
+  align-items: center;
+}
+
+footer h1 {
+  margin-bottom: 10px;
+}
+footer i {
+  margin: 20px 10px;
+  font-size: 30px;
+  color: white;
+}
