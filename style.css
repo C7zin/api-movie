@@ -384,3 +384,87 @@ footer i {
   font-size: 30px;
   color: white;
 }
+
+/* responsividade */
+/* Estilos base permanecem os mesmos */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Ajustes para telas menores */
+@media (max-width: 1024px) {
+  header {
+    flex-direction: column; /* Empilha os elementos verticalmente */
+    text-align: center;
+    height: auto; /* Permite que o header se ajuste ao conteúdo */
+    gap: 10px;
+  }
+
+  #search {
+    width: 90%; /* Ajusta a largura do campo de busca */
+    height: 50px;
+  }
+
+  #search-button {
+    width: 80%;
+    height: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .content {
+    height: 320px; /* Reduz a altura do slider */
+    width: 90%; /* Ajusta a largura para caber em telas menores */
+  }
+
+  .details-btn {
+    font-size: 1.5rem; /* Reduz o tamanho do texto */
+    padding: 8px 16px;
+  }
+
+  .navigation {
+    left: 50%; /* Ajusta a posição da navegação */
+    bottom: 120px;
+    transform: translateX(-50%);
+  }
+
+  .produtos .container-produtos {
+    flex-direction: column; /* Empilha os cards verticalmente */
+    gap: 15px;
+  }
+
+  .card-produto {
+    width: 90%; /* Ajusta os cards para ocupar quase toda a largura da tela */
+  }
+
+  table {
+    width: 100%; /* Garante que a tabela ocupe toda a largura disponível */
+  }
+}
+
+@media (max-width: 480px) {
+  header {
+    padding: 20px;
+  }
+
+  #search {
+    width: 100%; /* Expande o campo de busca para caber na tela */
+  }
+
+  .content {
+    height: 240px; /* Ajusta o tamanho do slider */
+  }
+
+  .endereco iframe {
+    width: 100%; /* Deixa o mapa responsivo */
+    height: 300px;
+  }
+
+  footer {
+    padding: 20px;
+    font-size: 0.8rem; /* Reduz o tamanho da fonte no rodapé */
+  }
+}
